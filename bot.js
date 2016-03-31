@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/;botRegexGod = /^\/God/
-      botRegexAd=/^\/advance/;botRegexBroncos = /^\/Broncos/;botRegexSaints = /^\/Saints/;botRegexCheese = /^\/Cheese/;botRegexSeahawks = /^\/Seahawks/;botRegexPanthers = /^\/Panthers/;botRegexPackers = /^\/Packers/;botRegexSteelers = /^\/Steelers/;botRegexFalcons = /^\/Falcons/;botRegexColts = /^\/Colts/;botRegexCardinals = /^\/Cardinals/;botRegexVikings = /^\/Vikings/;botRegexDolphins = /^\/Dolphons/;botRegexCowboys = /^\/Cowboys/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexAd=/^\/advance/;botRegexBroncos = /^\/Broncos/;botRegexSaints = /^\/Saints/;botRegexCheese = /^\/Cheese/;botRegexDeez Nuts = /^\/Deez Nuts/;botRegexBengals = /^\/Bengals/;botRegexBills = /^\/Bills/;botRegexSeahawks = /^\/Seahawks/;botRegexPanthers = /^\/Panthers/;botRegexPackers = /^\/Packers/;botRegexSteelers = /^\/Steelers/;botRegexFalcons = /^\/Falcons/;botRegexColts = /^\/Colts/;botRegexCardinals = /^\/Cardinals/;botRegexVikings = /^\/Vikings/;botRegexDolphins = /^\/Dolphons/;botRegexCowboys = /^\/Cowboys/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -72,6 +72,21 @@ function respond() {
       else if(request.text && botRegexCowboys.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://www.twitch.tv/twcarter1117");
+    this.res.end();
+  } 
+      else if(request.text && botRegexBengals.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://www.twitch.tv/xldvs_killalx");
+    this.res.end();
+  } 
+      else if(request.text && botRegexDeez Nuts.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://bossip.files.wordpress.com/2015/08/screen-shot-2015-08-24-at-2-42-49-pm.png?w=700");
+    this.res.end();
+  } 
+      else if(request.text && botRegexBills.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://www.twitch.tv/mickey1315");
     this.res.end();
   } 
       else if(request.text && botRegexCardinals.test(request.text)) {
