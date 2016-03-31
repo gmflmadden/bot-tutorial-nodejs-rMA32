@@ -5,8 +5,8 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/;botRegexGOAT = /^\/GOAT/
-      botRegexAd=/^\/advance/;botRegexBroncos = /^\/Broncos/;botRegexSaints = /^\/Saints/;botRegexColts = /^\/Colts/;botRegexVikings = /^\/Vikings/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegex = /^\/cool guy/;botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/;botRegexGod = /^\/God/
+      botRegexAd=/^\/advance/;botRegexBroncos = /^\/Broncos/;botRegexSaints = /^\/Saints/;botRegexColts = /^\/Colts/;botRegexVikings = /^\/Vikings/;botRegexCowboys = /^\/Cowboys/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -39,7 +39,7 @@ function respond() {
     postMessage("https://www.daddyleagues.com/GMFL16/rules");
     this.res.end();
   } 
-    else if(request.text && botRegexGOAT.test(request.text)) {
+    else if(request.text && botRegexGod.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://cmster.com/media/nhDqIWM5m7McSjzCWUZ2yam3JtHlwaUOJ8K3fwlKNChaluU7waXa6heN4JgYOjHL.jpg");
     this.res.end();
