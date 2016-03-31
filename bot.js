@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/;botRegexGOAT = /^\/GOAT/
-      botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexAd=/^\/advance/;botRegex = /^\/Broncos/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -42,6 +42,11 @@ function respond() {
     else if(request.text && botRegexGOAT.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://cmster.com/media/nhDqIWM5m7McSjzCWUZ2yam3JtHlwaUOJ8K3fwlKNChaluU7waXa6heN4JgYOjHL.jpg");
+    this.res.end();
+  } 
+      else if(request.text && botRegexBroncos.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://www.twitch.tv/xx3windy1city2xx");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
