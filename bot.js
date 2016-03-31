@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/;botRegexGod = /^\/God/
-      botRegexAd=/^\/advance/;botRegexBroncos = /^\/Broncos/;botRegexSaints = /^\/Saints/;botRegexColts = /^\/Colts/;botRegexVikings = /^\/Vikings/;botRegexCowboys = /^\/Cowboys/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexAd=/^\/advance/;botRegexBroncos = /^\/Broncos/;botRegexSaints = /^\/Saints/;botRegexCheese = /^\/Cheese/;botRegexPackers = /^\/Packers/;botRegexSteelers = /^\/Steelers/;botRegexFalcons = /^\/Falcons/;botRegexColts = /^\/Colts/;botRegexCardinals = /^\/Cardinals/;botRegexVikings = /^\/Vikings/;botRegexDolphins = /^\/Dolphons/;botRegexCowboys = /^\/Cowboys/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -57,12 +57,47 @@ function respond() {
       else if(request.text && botRegexColts.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.twitch.tv/panthersnation7");
-    this.res.end();  
+    this.res.end();
+  } 
+      else if(request.text && botRegexDolphins.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://www.twitch.tv/kingrich305");
+    this.res.end();
   } 
       else if(request.text && botRegexVikings.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.twitch.tv/puba1978");
+    this.res.end();
+  } 
+      else if(request.text && botRegexCowboys.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://www.twitch.tv/twcarter1117");
+    this.res.end();
+  } 
+      else if(request.text && botRegexCardinals.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://www.twitch.tv/bhyman20");
     this.res.end();  
+  } 
+      else if(request.text && botRegexPackers.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://www.twitch.tv/kidcurry_56");
+    this.res.end();
+  } 
+      else if(request.text && botRegexSteelers.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://www.twitch.tv/djp514");
+    this.res.end();
+  } 
+      else if(request.text && botRegexFalcons.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://www.twitch.tv/theagressivep00p");
+    this.res.end();
+  } 
+      else if(request.text && botRegexCheese.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://www.packerpalace.com/palace02/maddenwcheese.gif");
+    this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
     this.res.writeHead(200);
