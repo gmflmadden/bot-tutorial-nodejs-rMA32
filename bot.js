@@ -101,7 +101,7 @@ function respond() {
   } 
       else if(request.text && botRegexTouchdown.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://giant.gfycat.com/HighUnrealisticChinchilla.mp4");
+    postMessage("http://gfycat.com/HighUnrealisticChinchilla");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
